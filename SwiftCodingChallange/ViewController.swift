@@ -10,11 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var data : [User] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        data = DataManager.getData()
     }
-
-
 }
 
