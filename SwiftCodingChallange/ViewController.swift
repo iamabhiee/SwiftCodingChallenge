@@ -49,7 +49,7 @@ extension ViewController : UICollectionViewDataSource, UICollectionViewDelegate 
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: UserCollectionViewCell.nameOfClass, for: indexPath) as? UserCollectionViewCell {
             
             let file = data[indexPath.item]
-            cell.configure(with: file)
+            cell.configure(with: file, isIpad: self.isiPad)
             
             return cell
         }

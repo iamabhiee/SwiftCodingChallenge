@@ -10,6 +10,7 @@ import UIKit
 
 class UserCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var stackview : UIStackView!
     @IBOutlet weak var lblUserName : UILabel!
     @IBOutlet weak var imgUserAvatar : UIImageView!
 
@@ -18,8 +19,14 @@ class UserCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
 
-    func configure(with user : User) {
+    func configure(with user : User, isIpad : Bool) {
         lblUserName.text = user.name
         imgUserAvatar.load(urlStr: user.avatar)
+        
+        if isIpad {
+            stackview.axis = .vertical
+        } else {
+            stackview.axis = .horizontal
+        }
     }
 }
