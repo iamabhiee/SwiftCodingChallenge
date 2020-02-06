@@ -20,6 +20,6 @@ class UserCollectionViewCell: UICollectionViewCell {
 
     func configure(with user : User) {
         lblUserName.text = user.name
-        
+        imgUserAvatar.load(urlStr: user.avatar)
     }
 }

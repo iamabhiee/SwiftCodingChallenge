@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3492A9ED23EC2CA400BBB4F0 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3492A9EC23EC2CA400BBB4F0 /* UIView+Extension.swift */; };
+		3492A9F023EC34B100BBB4F0 /* ColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3492A9EF23EC34B100BBB4F0 /* ColumnFlowLayout.swift */; };
 		34ECC39A23EBF9D500D0FA9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC39923EBF9D500D0FA9C /* AppDelegate.swift */; };
 		34ECC39C23EBF9D500D0FA9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC39B23EBF9D500D0FA9C /* SceneDelegate.swift */; };
 		34ECC39E23EBF9D500D0FA9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC39D23EBF9D500D0FA9C /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3492A9EC23EC2CA400BBB4F0 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		3492A9EF23EC34B100BBB4F0 /* ColumnFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnFlowLayout.swift; sourceTree = "<group>"; };
 		34ECC39623EBF9D500D0FA9C /* SwiftCodingChallange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCodingChallange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34ECC39923EBF9D500D0FA9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34ECC39B23EBF9D500D0FA9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3492A9EE23EC34A800BBB4F0 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				3492A9EF23EC34B100BBB4F0 /* ColumnFlowLayout.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
 		34ECC38D23EBF9D500D0FA9C = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +115,7 @@
 		34ECC3AF23EBFAA600D0FA9C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3492A9EC23EC2CA400BBB4F0 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -132,6 +145,7 @@
 		34ECC3B323EBFAA600D0FA9C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3492A9EE23EC34A800BBB4F0 /* Layouts */,
 				34ECC3B623EBFB9100D0FA9C /* CollectionViewCells */,
 			);
 			path = Views;
@@ -228,9 +242,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				34ECC3B523EBFACA00D0FA9C /* User.swift in Sources */,
+				3492A9ED23EC2CA400BBB4F0 /* UIView+Extension.swift in Sources */,
 				34ECC3BF23EBFDFB00D0FA9C /* DataManager.swift in Sources */,
 				34ECC39E23EBF9D500D0FA9C /* ViewController.swift in Sources */,
 				34ECC39A23EBF9D500D0FA9C /* AppDelegate.swift in Sources */,
+				3492A9F023EC34B100BBB4F0 /* ColumnFlowLayout.swift in Sources */,
 				34ECC39C23EBF9D500D0FA9C /* SceneDelegate.swift in Sources */,
 				34ECC3B923EBFBA100D0FA9C /* UserCollectionViewCell.swift in Sources */,
 			);
